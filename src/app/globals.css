@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0, 0%, 88%, 1;
+    --foreground: 0, 0%, 16%, 1;
+    --secondary-foreground-light: 0, 0%, 66.67%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --primary: 39, 96%, 48%, 1;
+    --primary-foreground: 45, 96%, 48%, 1;
+
+    --secondary: 355, 89%, 53%, 1;
+    --secondary-foreground: 0, 0%, 95%, 1;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+}
+/* --background: HSL(0, 0%, 88%) = #E0E0E0
+
+--foreground: HSL(0, 0%, 16%) = #282828
+
+--secondary-foreground-white: HSL(0, 0%, 66.67%). #AAAA
+
+--card: HSL(0, 0%, 100%) = #FFFFFF
+
+--card-foreground: HSL(222.2, 84%, 4.9%) = #0D1326
+
+--primary: HSL(39, 96%, 48%) = #FBCA33
+
+--primary-foreground: HSL(45, 96%, 48%) = #FAD420
+
+--secondary: HSL(355, 89%, 53%) = #B43D1D
+
+--secondary-foreground: HSL(0, 0%, 95%) = #F2F2F2
+
+--border: HSL(214.3, 31.8%, 91.4%) = #E9E9EC
+
+--input: HSL(214.3, 31.8%, 91.4%) = #E9E9EC
+
+--ring: HSL(222.2, 84%, 4.9%) = #0D1326 */
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

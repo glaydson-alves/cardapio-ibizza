@@ -73,7 +73,7 @@ const Header = () => {
                         </Badge>
 
                         <Carrinho/>
-                        {/* <FinalizarPedido/> */}
+                        <FinalizarPedido/>
 
                     </div>
                     

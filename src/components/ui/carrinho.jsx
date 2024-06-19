@@ -1,11 +1,14 @@
 import React from 'react';
 import CarrinhoItem from './carrinho-item';
 import { useCarrinho } from '@/context/carrinhoContextApi';
+import { ScrollArea } from './scroll-area';
 
 const Carrinho = () => {
     const { produtos } = useCarrinho();
 
     return (
+        
+        <ScrollArea className="w-full h-[200px] rounded-md border">
         <div className="flex flex-col gap-5">
             {produtos.map((produto) => {                
                 return (
@@ -13,10 +16,13 @@ const Carrinho = () => {
                 );
             })}
         </div>
+        </ScrollArea>
     );
 };
 
 export default Carrinho;
+
+
 
 
 

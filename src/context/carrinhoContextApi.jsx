@@ -86,3 +86,31 @@ export const CarrinhoProvider = ({ children }) => {
 };
 
 export default CarrinhoProvider;
+
+/* 
+
+TODO => caso o produto tenha tamanho diferete do que ja está no carrinho, pode adiciona-lo novamente com o tamanho e preço atual, deixando como se fosse um novo produto.
+
+const addProdutoAoCarrinho = (produto, quantidade, preco, precoTotal, tamanho) => {
+    const produtoIndex = produtos.findIndex(p => p.nome === produto.nome);
+    if (produtoIndex > -1) {
+      const updatedProdutos = produtos.map((p, index) => {
+        if (index === produtoIndex) {
+          const novaQuantidade = p.quantidade + quantidade;
+          return {
+            ...p,
+            quantidade: novaQuantidade,
+            precoTotal: p.preco * novaQuantidade,
+          };
+        }
+        return p;
+      });
+      setProdutos(updatedProdutos);
+    } else {
+      const produtoComUUID = { ...produto, id: uuidv4(), quantidade, preco, precoTotal, tamanho };
+
+      const updatedProdutos = [...produtos, produtoComUUID];
+      setProdutos(updatedProdutos);
+    }
+  };
+*/

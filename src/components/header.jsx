@@ -59,7 +59,7 @@ const Header = () => {
                     </Button>
                 </SheetTrigger>
 
-                <SheetContent>
+                <SheetContent className='max-h-screen overflow-auto'>
                     <div className="flex flex-col gap-8">
                         <Badge 
                             variant="outline"

@@ -8,7 +8,7 @@ const Carrinho = () => {
 
     return (
         
-        <ScrollArea className="w-full h-[200px] rounded-md border">
+        // <ScrollArea className="w-full h-[200px] rounded-md border">
         <div className="flex flex-col gap-5">
             {produtos.map((produto) => {                
                 return (
@@ -16,7 +16,7 @@ const Carrinho = () => {
                 );
             })}
         </div>
-        </ScrollArea>
+        // </ScrollArea>
     );
 };
 

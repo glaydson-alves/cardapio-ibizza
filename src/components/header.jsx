@@ -54,7 +54,8 @@ const Header = () => {
                                 >
                                     <span className="w-full flex items-center justify-center">{quantidadeNoCarrinho}</span>
                                 </Badge>
-                            )}
+                            )
+                        }
                         <ShoppingCart className="text-white"/>
                     </Button>
                 </SheetTrigger>
@@ -71,9 +72,13 @@ const Header = () => {
                             />
                             <span className="uppercase font-bold">Carrinho</span>                       
                         </Badge>
-
-                        <Carrinho/>
-                        <FinalizarPedido/>
+                        {quantidadeNoCarrinho > 0 &&(
+                            <>
+                                <Carrinho />
+                                <FinalizarPedido />
+                            </>
+                            )
+                        }
 
                     </div>
                     
